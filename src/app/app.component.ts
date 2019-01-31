@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GestionEmpleados';
+
+  arrPadre: any[];
+
+  constructor() {
+    this.arrPadre = [];
+  }
+
+  guardarObjeto($event) {
+    this.arrPadre.push($event);
+    console.log(this.arrPadre);
+  }
+
 }
