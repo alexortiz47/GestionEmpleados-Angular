@@ -1,13 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="container-fluid my-5 bg-light py-5">
+<div class="container-fluid my-5 bg-light py-3">
   <h1 class="text-center">REGISTRO DE EMPLEADOS</h1>
-  <div class="container my-5">
 
-    <div class="row">
-      <app-lista-empleados class="col-6 bg-dark mr-5 p-5"  [arrFinal]="arrPadre"></app-lista-empleados>
-
-      <app-formulario class="col-4" (mandarObjeto)="guardarObjeto($event)"></app-formulario>
+  <div class="container my-3">
+    <div class="row mb-5">
+      <app-formulario class="col-4 mx-auto" (mandarEmpleado)="guardarEmpleado($event)"></app-formulario>
     </div>
-
   </div>
+
+  <div class="container my-3 bg-dark">
+    <div class="row">
+      <app-lista-empleados class="p-5"  [listaEmpleadosFinal]="arrEmpleados"></app-lista-empleados>
+    </div>
+  </div>
+
 </div>

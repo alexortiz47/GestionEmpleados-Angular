@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  arrPadre: any[];
+  arrEmpleados: any[];
 
   constructor() {
-    this.arrPadre = [];
+    this.arrEmpleados = [];
   }
 
-  guardarObjeto($event) {
-    this.arrPadre.push($event);
-    console.log(this.arrPadre);
+  guardarEmpleado($event) {
+    this.arrEmpleados.push($event);
+    console.log(this.arrEmpleados);
   }
 
 }

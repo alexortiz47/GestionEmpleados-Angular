@@ -7,31 +7,31 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
-  @Output() mandarObjeto = new EventEmitter;
+  @Output() mandarEmpleado = new EventEmitter;
 
   nombre: string;
   apellidos: string;
   departamento: string;
-  objetoDatos: any;
+  datosEmpleado: any;
 
   constructor() {
     this.nombre = '';
     this.apellidos = '';
     this.departamento = '';
-    this.objetoDatos = {};
+    this.datosEmpleado = {};
   }
 
   ngOnInit() {
   }
 
   guardarDatos() {
-    this.objetoDatos = {
+    this.datosEmpleado = {
       nomb: this.nombre,
       apell: this.apellidos,
       depar: this.departamento
     }
 
-    this.mandarObjeto.emit(this.objetoDatos);
+    this.mandarEmpleado.emit(this.datosEmpleado);
 
   }
 

@@ -7,7 +7,7 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class ListaEmpleadosComponent implements OnInit {
 
-  @Input() arrFinal: any[];
+  @Input() listaEmpleadosFinal: any[];
 
 
   ngOnInit() {
