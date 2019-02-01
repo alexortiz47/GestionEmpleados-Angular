@@ -1,10 +1,13 @@
 
-<div class="card mx-auto mb-4" style="width: 15rem;">
-    <img src="../../assets/user.png" class="card-img-top">
+<div class="card mx-auto mb-4 px-3 pt-3" style="width: 15rem;">
+  <img src="../../assets/user.png" class="card-img-top">
     <div class="card-body">
       <h5 class="card-title">{{ empleado.nomb }}</h5>
       <h5 class="card-title">{{ empleado.apell }}</h5>
-      <p class="card-text">{{ empleado.depar }}</p>
+      <img *ngIf="diseno" src="../../assets/diseño.png" style="width: 35px; margin-left: 91%">
+      <img *ngIf="informatica" src="../../assets/informatica.png" style="width: 35px; margin-left: 91%">
+      <img *ngIf="marketing" src="../../assets/marketing.png" style="width: 35px; margin-left: 91%">
+      <img *ngIf="ventas" src="../../assets/ventas.png" style="width: 35px; margin-left: 91%">
     </div>
 </div>
 
