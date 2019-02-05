@@ -8,13 +8,7 @@ export class EmpleadosService {
   arrEmpleados: any[];
 
   constructor() {
-    this.arrEmpleados = [
-      {nomb: 'Pepe', apell: 'Ramirez', depar: 'Marketing'},
-      {nomb: 'Rocío', apell: 'Gómez', depar: 'Ventas'},
-      {nomb: 'Aurelio', apell: 'González', depar: 'Informática'},
-      {nomb: 'María', apell: 'Ros', depar: 'Ventas'},
-      {nomb: 'Alex', apell: 'Ortiz', depar: 'Informática'}
-    ]
+    this.arrEmpleados = []
   }
 
   getAll(): any[] {
