@@ -16,11 +16,15 @@ export class AppComponent {
 
   guardarEmpleado($event) {
     this.arrEmpleados.push($event);
-    console.log(this.arrEmpleados);
   }
 
   departamentoSeleccionado($event) {
-    this.arrEmpleados = this.empleadosService.getByDepartamento($event.target.value)
+    if($event.target.value == 'Todos') {
+      this.arrEmpleados = this.empleadosService.getAll();
+    }else {
+      this.arrEmpleados = this.empleadosService.getByDepartamento($event.target.value)
+    }
+
   }
 
 }

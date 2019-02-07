@@ -4,15 +4,15 @@
 
   <div class="container my-5 border-bottom">
     <div class="row mb-5">
-      <app-formulario class="col-4 mx-auto" (mandarEmpleado)="guardarEmpleado($event)"></app-formulario>
+      <app-formulario class="col-md-4 col-sm-12 mx-auto" (mandarEmpleado)="guardarEmpleado($event)"></app-formulario>
     </div>
   </div>
 
   <div class="container my-4">
-    <div class="form-group col-4 mx-auto">
+    <div class="form-group col-md-4 col-sm-12 mx-auto">
         <label for="exampleFormControlSelect1">Filtrar por departamento:</label>
         <select class="form-control" (change)="departamentoSeleccionado($event)">
-          <option selected>...</option>
+          <option selected>Todos</option>
           <option>Marketing</option>
           <option>Informática</option>
           <option>Ventas</option>
