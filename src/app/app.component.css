@@ -1,4 +1,7 @@
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
+
+#lista {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
